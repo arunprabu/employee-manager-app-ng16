@@ -1,0 +1,117 @@
+Angular 16 
+
+Webapps 
+-------
+  1. Server Side Rendering Apps (SSR)
+      * Pages will reload / refresh 
+
+      Arch: 
+        1 App: HTML, CSS, JS, Back End Code, DB query 
+
+      In 1 Server the whole app will be deployed 
+
+      Disadvantages 
+      -------
+        1. Slower Webapps
+        2. High Bandwidth Consumption 
+        3. Expensive 
+        4. Not offering better UX 
+        5. Server is doing the heavy lifting 
+
+  2. Client Side Rendering Apps (CSR) = SPA + RESTful API 
+      * Pages will not reload / refresh 
+
+      Arch: 
+        Front End App: HTML, CSS, JS 
+          Single Page Apps 
+
+        Back End App: Back end + DB Query 
+          RESTful API 
+
+      2 Servers are needed to host both the apps 
+
+      Advantages
+      --------
+        1. Faster Webapps
+        2. Less Bandwidth Consumption 
+        3. Not Expensive 
+        4. offering better UX 
+        5. Server's workload is shared between two servers
+      
+
+Single Page Apps (SPA)
+-------
+  7 Characteristics 
+  ---------------
+    1. Pages should not reload
+    2. URL should change 
+    3. History should be maintained without page refresh 
+    4. Header and Footer should be intact -- w/o loading again and again 
+    5. Main section should show contextual updates. 
+    6. Active Menu should be set 
+    7. Page title should also be changed 
+
+How to develop SPA? using SPA Libraries or Frameworks 
+-------
+  #1 React JS (library)
+  #2 Angular (Framework)
+  #3 VueJS (Framework)
+  #4 Svelte (Framework)
+
+==========================
+
+Setting up environment 
+------
+  1. NodeJS v16+
+  2. VS Code 
+  3. Browser 
+  4. Angular CLI
+
+
+CLI Versions 
+--------
+  Angular 2 --- CLI v 1.2.x 
+  Angular 4 --- CLI v 1.5.x 
+  Angular 5 --- CLI v 1.7.x 
+  Angular 6 --- CLI v 6 (semver)
+  Angular 7 --- CLI v 7
+  Angular 8 --- CLI v 8
+  Angular 9 --- CLI v 9
+  Angular 10 --- CLI v 10
+  Angular 11 --- CLI v 11
+  Angular 12 --- CLI v 12
+  Angular 13 --- CLI v 13
+  Angular 14 --- CLI v 14
+  Angular 15 --- CLI v 15
+  Angular 16 --- CLI v 16
+
+
+  npm i @angular/cli -g 
+
+
+Building blocks 
+-----------
+  Components 
+  Directives 
+  Services
+  Pipes 
+  Guards 
+  Interfaces
+  Classes 
+  Modules
+  Interceptors 
+
+
+Concepts
+------
+  ??
+  ??
+  
+
+Think in Angular 
+------
+  Step 0: Identify the number of Components
+
+  Step 1: Break the UI into Component hierarchy 
+
+  
