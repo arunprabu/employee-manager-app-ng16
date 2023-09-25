@@ -104,9 +104,19 @@ Building blocks
 
 Concepts
 ------
-  ??
-  ??
+  Routing 
+  Data Binding 
+  Cross Component Communication 
+  Dependency Injection
+  REST API Calls 
+  RxJS/Observables
+  Subscription
+  Authentication 
+  Lazy Loading 
+  Build and Deployment 
   
+Unit Testing 
+
 
 Think in Angular 
 ------
@@ -115,3 +125,60 @@ Think in Angular
   Step 1: Break the UI into Component hierarchy 
 
   
+ng g c shared/components/header 
+ng g c shared/components/footer -t -s
+
+
+Content Projection / Transclusion 
+---------------------------------
+  Learn about conditional content projection or transclusion 
+  
+
+Single Page Apps (SPA)
+-------
+  7 Characteristics 
+  ---------------
+    1. Pages should not reload [DONE]
+    2. URL should change [DONE]
+    3. History should be maintained without page refresh [DONE]
+    4. Header and Footer should be intact -- w/o loading again and again [DONE]
+    5. Main section should show contextual updates. [DONE]
+    6. Active Menu should be set [TODO]
+    7. Page title should also be changed [TODO]
+
+
+Routing in Angular
+===================
+  Step 0: Identify the menus and the urls 
+          Home              - http://localhost:4200/
+          Concepts          - http://localhost:4200/concepts
+          About Us          - http://localhost:4200/about-us
+          Contact Us        - http://localhost:4200/contact-us
+
+  Step 1: Let's setup the identified urls in menu-list.comp's template in hrefs 
+
+  Step 2: Check the app. URLs will not be stable. 
+          Let's work on to create the necessary components
+          ng g c home/components/home -t -s 
+          ng g c concepts/components/concepts -s 
+          ng g c about-us/components/about-us -s -t
+          ng g c contact-us/components/contact-us -s -t
+
+  Step 3: Let's config the routing in app-routing.module.ts 
+  
+  Step 4: Check the app. URLs will be stable. 
+          Let's load the component in between header and footer.
+          in app.comp.html 
+          in between header and footer, add <router-outlet></router-outlet>
+
+  Step 5: Check the app. Page will still refresh. Let's fix it. 
+          in menu.comp template, replace href with routerLink. 
+
+
+  Routing is over!.. 
+
+=============================
+
+
+TO TEACH tomorrow: Naming Conventions & Casing Conventions
+-------
