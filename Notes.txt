@@ -180,5 +180,63 @@ Routing in Angular
 =============================
 
 
-TO TEACH tomorrow: Naming Conventions & Casing Conventions
+TO TEACH today: Naming Conventions & Casing Conventions
 -------
+Casing Types 
+--------
+  1. PascalCase 
+      * Recommended for Object Oriented Program's classes 
+      * also Recommended for Interface in Java & TypeScript 
+      * also needed for Enum
+
+      examples 
+      ---
+        class CarDetails {
+
+        }
+
+        interface Employee {
+
+        }
+
+  2. camelCase 
+      * Recommended for variables, const, functions, methods in JS & TS 
+      * Recommended for id's of html 
+
+      examples 
+      -----
+        var myCar = 'BMW';
+
+        function getCarInfo() {
+          //....
+        }
+  
+  3. kebab-case
+      * Recommended for URLs 
+      * Recommended for file names, folder names (if not react), assets in front end projects 
+      * Recommended for css classes 
+      * Recommended for custom attributes
+      * okay for id's of html elements if your architect says okay
+
+      examples 
+      -----
+        btn-primary
+        slideshow-container
+        youtube-logo.png 
+
+  4. snake_case
+      * never ever use this. 
+      * okay for const in JS & TS if architect accepts
+
+      examples
+      ---
+        const MAX_STUDENTS_PER_CLASS = 30;
+        
+-----------------
+
+Formatting 
+Linting Rules 
+-------------
+
+
+

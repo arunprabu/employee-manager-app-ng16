@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-footer', // element selector
   template: `
     <footer class="text-center">
       <hr />
@@ -13,6 +13,6 @@ import { Component } from '@angular/core';
       <p>Copyright 2023 | Arun</p>
     </footer>
   `,
-  styles: [],
+  styles: []
 })
 export class FooterComponent {}
