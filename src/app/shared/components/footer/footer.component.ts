@@ -10,9 +10,19 @@ import { Component } from '@angular/core';
           <a class="nav-link" href="#">Back to Top</a>
         </li>
       </app-menu-list>
-      <p>Copyright 2023 | Arun</p>
+      <p class="bold-text" style="font-size: 12px;">
+        Copyright {{ copyrightYear }} | Arun
+      </p>
     </footer>
   `,
-  styles: []
+  styles: [
+    `
+      .bold-text {
+        font-weight: bold;
+      }
+    `
+  ]
 })
-export class FooterComponent {}
+export class FooterComponent {
+  copyrightYear = 2023;
+}

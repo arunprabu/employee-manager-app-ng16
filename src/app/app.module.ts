@@ -10,6 +10,8 @@ import { HomeComponent } from './home/components/home/home.component';
 import { ConceptsComponent } from './concepts/components/concepts/concepts.component';
 import { AboutUsComponent } from './about-us/components/about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/components/contact-us/contact-us.component';
+import { FormsModule } from '@angular/forms';
+import { UserInfoComponent } from './concepts/components/user-info/user-info.component';
 
 // Main Switching Box
 @NgModule({
@@ -21,11 +23,13 @@ import { ContactUsComponent } from './contact-us/components/contact-us/contact-u
     HomeComponent,
     ConceptsComponent,
     AboutUsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent] // bootstrapping AppComponent as the root component

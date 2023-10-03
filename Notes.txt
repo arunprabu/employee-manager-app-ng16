@@ -92,6 +92,9 @@ CLI Versions
 Building blocks 
 -----------
   Components 
+    HTML [DONE]
+    CSS [DONE]
+    TS 
   Directives 
   Services
   Pipes 
@@ -104,7 +107,7 @@ Building blocks
 
 Concepts
 ------
-  Routing 
+  Routing [DONE]
   Data Binding 
   Cross Component Communication 
   Dependency Injection
@@ -180,7 +183,7 @@ Routing in Angular
 =============================
 
 
-TO TEACH today: Naming Conventions & Casing Conventions
+Naming Conventions & Casing Conventions
 -------
 Casing Types 
 --------
@@ -234,9 +237,51 @@ Casing Types
         
 -----------------
 
-Formatting 
-Linting Rules 
+Formatting [DONE]
+Linting Rules [DONE]
 -------------
+
+Data Binding 
+----
+  * keeping the data in comp.ts and displaying it in comp.html 
+
+  1. Interpolation [DONE]
+      TS ==> HTML 
+      {{}}
+
+  2. Property Binding  [DONE]
+      TS ==> HTML 
+      []
+
+  3. Event Binding  [DONE]
+      TS <== HTML 
+      ()
+
+  4. Two Way Binding  [DONE]
+      TS <=> HTML
+      [(ngModel)]
+
+      Note: implement this in form element such as input, textarea
+
+
+  5. Custom Property Binding
+  6. Custom Event Binding
+
+
+Cross Component Communication
+-----------------
+  1. Parent to Child Component Communication
+      using Custom Property Binding
+
+  2. Child to Parent Component Communication
+      2.1 using Custom Event Binding
+      2.2 using @ViewChild() or @ViewChildren()  [TODO]
+
+  3. Any to Any Component Communication
+      3.1 Using Services, RxJS/Observables, Subscription 
+      3.2 Using NgRx (third party Framework)
+
+========
 
 
 
