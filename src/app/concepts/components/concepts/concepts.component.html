@@ -1,5 +1,9 @@
 <div>
   <h1>Angular Concepts</h1>
+  <div class="alert alert-warning">
+    {{dataReceivedChildComp?.status}}
+  </div>
+  
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
       <button
@@ -116,6 +120,8 @@
       tabindex="0"
     >
       <h2>Custom Event Binding</h2>
+      <!-- Step 3 of Custom Event Binding: Let's handle the emitted event and receive the date using $event-->
+      <app-reports (reportGenerated)="handleReportGenerated($event)"></app-reports>
     </div>
 
     <div
@@ -126,6 +132,44 @@
       tabindex="0"
     >
       <h2>Directives</h2>
+      <pre>
+        Directives
+        ------
+          * Special Instructions to the DOM
+
+          1. Attribute Directives
+              examples: routerLink, routerLinkActive, routerLinkActiveOptions
+
+          2. Structural Directives
+              => impacts will be on html (structural layer)
+                *ngIf (used for conditional rendering)
+
+                *ngFor (used for looping thru)
+                 
+                ngSwitch [TODO]
+
+          3. Custom Attribute Directives 
+      
+          4. Custom Structural Directives [TODO]
+      </pre>
+      <hr >
+      <h4>*ngIf Demo</h4>
+
+      <div class="alert alert-success" *ngIf="isLoggedIn; else NotAuthWrapper">
+        You are authenticated.
+      </div>
+      <ng-template #NotAuthWrapper>
+        <div class="alert alert-danger">
+          Please login to access premium features of the app!
+        </div>
+      </ng-template>
+
+      <h4>*ngFor Demo</h4>
+      <ul>
+        <li *ngFor="let skill of skills">{{skill}}</li>
+        <!-- TODO: Learn about getting index in *ngFor and display the sequence here in li before the skill-->
+      </ul>
+
     </div>
   </div>
 </div>

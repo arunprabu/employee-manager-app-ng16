@@ -94,7 +94,7 @@ Building blocks
   Components 
     HTML [DONE]
     CSS [DONE]
-    TS 
+    TS [DONE]
   Directives 
   Services
   Pipes 
@@ -108,8 +108,8 @@ Building blocks
 Concepts
 ------
   Routing [DONE]
-  Data Binding 
-  Cross Component Communication 
+  Data Binding [DONE]
+  Cross Component Communication [PARTIALLY DONE]
   Dependency Injection
   REST API Calls 
   RxJS/Observables
@@ -263,19 +263,21 @@ Data Binding
 
       Note: implement this in form element such as input, textarea
 
-
-  5. Custom Property Binding
-  6. Custom Event Binding
+  5. Custom Property Binding [DONE]
+  6. Custom Event Binding [DONE]
 
 
 Cross Component Communication
 -----------------
-  1. Parent to Child Component Communication
+  1. Parent to Child Component Communication [DONE]
       using Custom Property Binding
 
   2. Child to Parent Component Communication
-      2.1 using Custom Event Binding
+      2.1 using Custom Event Binding [DONE]
+            sending data from child to parent comp 
+
       2.2 using @ViewChild() or @ViewChildren()  [TODO]
+            accessing child comp's data from parent comp
 
   3. Any to Any Component Communication
       3.1 Using Services, RxJS/Observables, Subscription 
