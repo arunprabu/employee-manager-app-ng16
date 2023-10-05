@@ -47,7 +47,7 @@ export class ColorizerDirective {
 
   // Handle the event inside directive -- click
   @HostListener('click', ['$event'])
-  handleClick(event: any) {
+  handleClick(event: Event) {
     console.log(event.target);
     this.renderer.setStyle(event.target, 'background-color', 'yellow');
     this.renderer.setStyle(event.target, 'color', '#000');
