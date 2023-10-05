@@ -95,7 +95,7 @@ Building blocks
     HTML [DONE]
     CSS [DONE]
     TS [DONE]
-  Directives 
+  Directives [DONE]
   Services
   Pipes 
   Guards 
@@ -110,7 +110,7 @@ Concepts
   Routing [DONE]
   Data Binding [DONE]
   Cross Component Communication [PARTIALLY DONE]
-  Dependency Injection
+  Dependency Injection [DONE]
   REST API Calls 
   RxJS/Observables
   Subscription
@@ -353,4 +353,4 @@ Project Structure
           directives/
             ...
             ...
-            
+
