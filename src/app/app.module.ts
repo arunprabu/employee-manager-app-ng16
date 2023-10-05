@@ -14,6 +14,9 @@ import { FormsModule } from '@angular/forms';
 import { UserInfoComponent } from './concepts/components/user-info/user-info.component';
 import { ReportsComponent } from './concepts/components/reports/reports.component';
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
+import { ListEmployeesComponent } from './employees/components/list-employees/list-employees.component';
+import { AddEmployeeComponent } from './employees/components/add-employee/add-employee.component';
+import { EmployeeDetailsComponent } from './employees/components/employee-details/employee-details.component';
 
 // Main Switching Box
 @NgModule({
@@ -28,7 +31,10 @@ import { ColorizerDirective } from './concepts/directives/colorizer.directive';
     ContactUsComponent,
     UserInfoComponent,
     ReportsComponent,
-    ColorizerDirective
+    ColorizerDirective,
+    ListEmployeesComponent,
+    AddEmployeeComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,

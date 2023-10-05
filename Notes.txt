@@ -327,6 +327,11 @@ Project Structure
           components/
         contact-us/
           components/
+        employees/
+          components/
+            list-employees/
+            add-employee/
+            employee-details/
         ....
         ....
         ....
@@ -353,4 +358,35 @@ Project Structure
           directives/
             ...
             ...
+
+
+=====
+
+Employee Manager 
+  Add Employee
+    localhost:4200/employees/add 
+
+  List Employees [DONE]
+    localhost:4200/employees/
+
+  Employee Details 
+    localhost:4200/employees/1
+    localhost:4200/employees/2
+    localhost:4200/employees/10 
+
+  Update Employee
+    localhost:4200/employees/1
+    localhost:4200/employees/2
+    localhost:4200/employees/10 
+
+  Delete Employee 
+    localhost:4200/employees/1
+    localhost:4200/employees/2
+    localhost:4200/employees/10 
+  
+------------------------------------------
+
+
+
+
 
