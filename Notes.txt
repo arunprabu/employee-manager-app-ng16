@@ -286,4 +286,71 @@ Cross Component Communication
 ========
 
 
+Directives
+------
+  * Special Instructions to the DOM
 
+  1. Attribute Directives
+      examples: routerLink, routerLinkActive, routerLinkActiveOptions
+
+  2. Structural Directives
+      => impacts will be on html (structural layer)
+        *ngIf (used for conditional rendering )
+
+        *ngFor (used for looping thru)
+
+        ngSwitch [TODO]
+
+  3. Custom Attribute Directives 
+      
+  4. Custom Structural Directives [TODO]
+
+
+      
+Project Structure 
+==================
+  1. Feature-wise and Building Block wise structure [RECOMMENDED]
+    src/
+      app/ 
+        shared/
+          components/
+            header/
+            footer/
+            menu-list/
+        home/
+          components/
+        concepts/
+          components/
+          directives/
+            colorizer.directive.ts 
+        about-us/
+          components/
+        contact-us/
+          components/
+        ....
+        ....
+        ....
+        ....
+        ....
+
+
+  2. Feature-wise structure 
+      src/
+        app/
+          home/
+            home.comp.ts 
+            home.comp.html 
+            home.comp.css
+            home.comp.spec.ts 
+            colorizer.directive.ts 
+
+  3. Building Block wise structure 
+      src/
+        app/ 
+          components/
+            ...
+            ...
+          directives/
+            ...
+            ...
+            
