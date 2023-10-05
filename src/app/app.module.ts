@@ -13,6 +13,7 @@ import { ContactUsComponent } from './contact-us/components/contact-us/contact-u
 import { FormsModule } from '@angular/forms';
 import { UserInfoComponent } from './concepts/components/user-info/user-info.component';
 import { ReportsComponent } from './concepts/components/reports/reports.component';
+import { ColorizerDirective } from './concepts/directives/colorizer.directive';
 
 // Main Switching Box
 @NgModule({
@@ -26,7 +27,8 @@ import { ReportsComponent } from './concepts/components/reports/reports.componen
     AboutUsComponent,
     ContactUsComponent,
     UserInfoComponent,
-    ReportsComponent
+    ReportsComponent,
+    ColorizerDirective
   ],
   imports: [
     BrowserModule,

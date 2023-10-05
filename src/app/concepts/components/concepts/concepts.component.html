@@ -1,9 +1,9 @@
 <div>
   <h1>Angular Concepts</h1>
   <div class="alert alert-warning">
-    {{dataReceivedChildComp?.status}}
+    {{ dataReceivedChildComp?.status }}
   </div>
-  
+
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
       <button
@@ -72,27 +72,29 @@
     >
       <h2>Basic Data Binding</h2>
       <h3>Interpolation Demo</h3>
-      <p>App Name: {{appName}}</p>
-      <hr/>
+      <p>App Name: {{ appName }}</p>
+      <hr />
 
       <h3>Property Binding Demo</h3>
       <!-- the following is interpolation -->
-      <input type="text" value="{{companyName}}">
-      <br><br>
+      <input type="text" value="{{ companyName }}" />
+      <br /><br />
       <!-- the following is property binding -->
-      <input type="text" [value]="companyName">
+      <input type="text" [value]="companyName" />
 
-      <hr/>
+      <hr />
       <h3>Event Binding Demo</h3>
       <button (click)="handleClickMe($event)">Click Me</button>
 
-      <hr/>
+      <hr />
       <h3>Two Way Binding</h3>
-      <p>{{courseName}}</p><!-- interpolation-->
-      <input type="text" [value]="courseName"> <!-- prop binding -->
-      <br><br>
+      <p>{{ courseName }}</p>
+      <!-- interpolation-->
+      <input type="text" [value]="courseName" />
+      <!-- prop binding -->
+      <br /><br />
       <!-- The following is two way binding -->
-      <input type="text" [(ngModel)]="courseName">
+      <input type="text" [(ngModel)]="courseName" />
     </div>
 
     <div
@@ -104,11 +106,11 @@
     >
       <h2>Custom Property Binding</h2>
       <app-user-info></app-user-info>
-      <br>
+      <br />
       <app-user-info [age]="30"></app-user-info>
-      <br>
+      <br />
       <app-user-info [age]="40"></app-user-info>
-      <br>
+      <br />
       <app-user-info [age]="myAge"></app-user-info>
     </div>
 
@@ -121,7 +123,9 @@
     >
       <h2>Custom Event Binding</h2>
       <!-- Step 3 of Custom Event Binding: Let's handle the emitted event and receive the date using $event-->
-      <app-reports (reportGenerated)="handleReportGenerated($event)"></app-reports>
+      <app-reports
+        (reportGenerated)="handleReportGenerated($event)"
+      ></app-reports>
     </div>
 
     <div
@@ -152,7 +156,7 @@
       
           4. Custom Structural Directives [TODO]
       </pre>
-      <hr >
+      <hr />
       <h4>*ngIf Demo</h4>
 
       <div class="alert alert-success" *ngIf="isLoggedIn; else NotAuthWrapper">
@@ -166,10 +170,14 @@
 
       <h4>*ngFor Demo</h4>
       <ul>
-        <li *ngFor="let skill of skills">{{skill}}</li>
+        <li *ngFor="let skill of skills">{{ skill }}</li>
         <!-- TODO: Learn about getting index in *ngFor and display the sequence here in li before the skill-->
       </ul>
 
+      <h3>Custom Attribute Directive Demo</h3>
+      <div appColorizer>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      </div>
     </div>
   </div>
 </div>
