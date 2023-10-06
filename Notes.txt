@@ -96,7 +96,7 @@ Building blocks
     CSS [DONE]
     TS [DONE]
   Directives [DONE]
-  Services
+  Services 
   Pipes 
   Guards 
   Interfaces
@@ -385,6 +385,25 @@ Employee Manager
     localhost:4200/employees/10 
   
 ------------------------------------------
+Forms in Angular 
+------
+  1. Template Driven Forms 
+      * created with html 
+      * easiest 
+
+      Disadvantages 
+      ----
+        1. Not suitable for complex form validations 
+        2. Not suitable for unit testing
+
+  2. Reactive Forms [RECOMMEND]
+      * created with html and ts 
+      * easy
+
+      Advantages 
+      ------
+        1. suitable for complex form validations 
+        2. suitable for unit testing
 
 
 

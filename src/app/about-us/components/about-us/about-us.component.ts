@@ -11,5 +11,4 @@ import { Component, ElementRef } from '@angular/core';
   ]
 })
 export class AboutUsComponent {
-
 }

@@ -13,10 +13,10 @@
   <div class="row">
     
     <!-- TODO: Show the loader / spinner at first -->
-    <div class="card col-sm-3">
+    <div class="card col-sm-3" *ngFor="let employee of employees">
       <div class="card-body">
-        <h5 class="card-title">John</h5>
-        <p class="card-text">34567898</p>
+        <h5 class="card-title">{{employee.name}}</h5>
+        <p class="card-text">Phone: {{employee.phone}}</p>
         <a routerLink="/employees/1" class="card-link">View Details</a>
       </div>
     </div>

@@ -10,13 +10,14 @@ import { HomeComponent } from './home/components/home/home.component';
 import { ConceptsComponent } from './concepts/components/concepts/concepts.component';
 import { AboutUsComponent } from './about-us/components/about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/components/contact-us/contact-us.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserInfoComponent } from './concepts/components/user-info/user-info.component';
 import { ReportsComponent } from './concepts/components/reports/reports.component';
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
 import { ListEmployeesComponent } from './employees/components/list-employees/list-employees.component';
 import { AddEmployeeComponent } from './employees/components/add-employee/add-employee.component';
 import { EmployeeDetailsComponent } from './employees/components/employee-details/employee-details.component';
+import { HttpClientModule } from '@angular/common/http';
 
 // Main Switching Box
 @NgModule({
@@ -39,7 +40,9 @@ import { EmployeeDetailsComponent } from './employees/components/employee-detail
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent] // bootstrapping AppComponent as the root component
