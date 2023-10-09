@@ -363,7 +363,7 @@ Project Structure
 =====
 
 Employee Manager 
-  Add Employee
+  Add Employee 
     localhost:4200/employees/add 
 
   List Employees [DONE]
@@ -396,7 +396,7 @@ Forms in Angular
         1. Not suitable for complex form validations 
         2. Not suitable for unit testing
 
-  2. Reactive Forms [RECOMMEND]
+  2. Reactive Forms [RECOMMENDED]
       * created with html and ts 
       * easy
 

@@ -18,7 +18,7 @@ export class ConceptsComponent {
   dataReceivedChildComp: any;
   // for conditional rendering
   isLoggedIn = false;
-  // for looping thru 
+  // for looping thru
   skills = ['ng', 'html', 'css', 'js'];
 
   // event binding
@@ -28,7 +28,8 @@ export class ConceptsComponent {
   }
 
   // Step 4 of Custom Event Binding
-  handleReportGenerated(event: any) { // event will carry data sent by child comp
+  handleReportGenerated(event: any) {
+    // event will carry data sent by child comp
     console.log('calling the method from parent comp');
     console.log(event);
     this.dataReceivedChildComp = event;
