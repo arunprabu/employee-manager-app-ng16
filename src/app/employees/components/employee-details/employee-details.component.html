@@ -3,14 +3,14 @@
   <div class="row">
     <div class="card col-md-12">
       <!-- TODO: show loader/spinner here-->
-      <div class="card-body">
-        <h5 class="card-title">John</h5>
+      <div class="card-body" *ngIf="employee">
+        <h5 class="card-title">{{ employee.name }}</h5>
         <p class="card-text">
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </p>
-        <p>Phone: 234567890</p>
-        <p>Email: j@k.com</p>
+        <p>Phone: {{ employee.phone }}</p>
+        <p>Email: {{ employee.email }}</p>
         <button
           type="button"
           class="btn btn-primary"
@@ -45,42 +45,51 @@
               </div>
               <div class="modal-body">
                 <!-- if you want html validation use ngNativeValidate in form tag -->
-                <form>
+                <form (ngSubmit)="handleUpdateEmployee()">
                   <div class="form-group row mb-3">
-                    <label for="staticEmail" class="col-sm-2 col-form-label"
+                    <label for="nameInput" class="col-sm-2 col-form-label"
                       >Name</label
                     >
                     <div class="col-sm-10">
                       <input
                         type="text"
+                        id="nameInput"
                         class="form-control"
                         placeholder="Enter name"
+                        [(ngModel)]="duplicateEmployee.name"
+                        name="nameInput"
                       />
                       <div class="invalid-feedback">Name is Required</div>
                     </div>
                   </div>
                   <div class="form-group row mb-3">
-                    <label for="staticEmail" class="col-sm-2 col-form-label"
+                    <label for="phoneInput" class="col-sm-2 col-form-label"
                       >Phone</label
                     >
                     <div class="col-sm-10">
                       <input
                         type="text"
+                        id="phoneInput"
                         class="form-control"
                         placeholder="Enter Phone"
+                        [(ngModel)]="duplicateEmployee.phone"
+                        name="phoneInput"
                       />
                       <div class="invalid-feedback">Phone is Required</div>
                     </div>
                   </div>
                   <div class="form-group row mb-3">
-                    <label for="staticEmail" class="col-sm-2 col-form-label"
+                    <label for="emailInput" class="col-sm-2 col-form-label"
                       >Email</label
                     >
                     <div class="col-sm-10">
                       <input
                         type="email"
+                        id="emailInput"
                         class="form-control"
                         placeholder="Enter Email"
+                        [(ngModel)]="duplicateEmployee.email"
+                        name="emailInput"
                       />
                       <div class="invalid-feedback">
                         <div>Email is Required</div>
@@ -89,7 +98,9 @@
                     </div>
                   </div>
 
-                  <div class="alert alert-success">Updated successfully!</div>
+                  <div class="alert alert-success" *ngIf="isUpdated">
+                    Updated successfully!
+                  </div>
 
                   <div class="modal-footer">
                     <button

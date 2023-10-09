@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'concepts', component: ConceptsComponent },
   { path: 'employees', component: ListEmployeesComponent },
   { path: 'employees/add', component: AddEmployeeComponent },
-  { path: 'employees/1', component: EmployeeDetailsComponent },
+  { path: 'employees/:employeeId', component: EmployeeDetailsComponent }, // employeeId is url param
   { path: 'about-us', component: AboutUsComponent },
   { path: 'contact-us', component: ContactUsComponent }
 ];

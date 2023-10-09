@@ -363,23 +363,23 @@ Project Structure
 =====
 
 Employee Manager 
-  Add Employee 
+  Add Employee [DONE]
     localhost:4200/employees/add 
 
   List Employees [DONE]
     localhost:4200/employees/
 
-  Employee Details 
+  Employee Details [DONE]
     localhost:4200/employees/1
     localhost:4200/employees/2
     localhost:4200/employees/10 
 
-  Update Employee
+  Update Employee 
     localhost:4200/employees/1
     localhost:4200/employees/2
     localhost:4200/employees/10 
 
-  Delete Employee 
+  Delete Employee [TODO]
     localhost:4200/employees/1
     localhost:4200/employees/2
     localhost:4200/employees/10 
@@ -405,7 +405,6 @@ Forms in Angular
         1. suitable for complex form validations 
         2. suitable for unit testing
 
-
-
+Validation is pending in update form 
 
 

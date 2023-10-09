@@ -8,6 +8,7 @@ import { EmployeesService } from '../../services/employees.service';
 })
 export class ListEmployeesComponent implements OnInit {
   employees!: any[];
+
   // 1. connect to the service using dependency injection
   constructor(private employeesService: EmployeesService) {
     console.log('Inside constructor');
@@ -20,7 +21,7 @@ export class ListEmployeesComponent implements OnInit {
     console.log('Inside ngOnInit');
     // 2. send the req to the service
     this.employeesService.getEmployees()
-      .subscribe((res: any) => {
+      .subscribe((res: any[]) => {
         // 3. get the response from the service
         console.log(res);
         this.employees = res;
