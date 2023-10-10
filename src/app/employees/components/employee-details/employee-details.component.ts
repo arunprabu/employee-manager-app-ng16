@@ -30,11 +30,15 @@ export class EmployeeDetailsComponent implements OnInit {
     this.employeesService.getEmployeeById(employeeId).subscribe((res: any) => {
       console.log(res);
       this.employee = res;
-      // duplicating object using spread operator
-      this.duplicateEmployee = {
-        ...this.employee
-      };
     });
+  }
+
+  handleEditModalOpen() {
+    // duplicating object using spread operator
+    this.duplicateEmployee = {
+      ...this.employee
+    };
+    this.isUpdated = false;
   }
 
   handleUpdateEmployee() {
@@ -43,6 +47,7 @@ export class EmployeeDetailsComponent implements OnInit {
     this.employeesService.updateEmployee(this.duplicateEmployee)  
       .subscribe( (res: any) => {
         console.log(res);
+        this.employee = res;
         this.isUpdated = true;
       });
   }

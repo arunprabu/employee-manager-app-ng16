@@ -14,10 +14,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserInfoComponent } from './concepts/components/user-info/user-info.component';
 import { ReportsComponent } from './concepts/components/reports/reports.component';
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
-import { ListEmployeesComponent } from './employees/components/list-employees/list-employees.component';
-import { AddEmployeeComponent } from './employees/components/add-employee/add-employee.component';
-import { EmployeeDetailsComponent } from './employees/components/employee-details/employee-details.component';
 import { HttpClientModule } from '@angular/common/http';
+import { EmployeesModule } from './employees/employees.module';
 
 // Main Switching Box
 @NgModule({
@@ -32,17 +30,14 @@ import { HttpClientModule } from '@angular/common/http';
     ContactUsComponent,
     UserInfoComponent,
     ReportsComponent,
-    ColorizerDirective,
-    ListEmployeesComponent,
-    AddEmployeeComponent,
-    EmployeeDetailsComponent
+    ColorizerDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    EmployeesModule
   ],
   providers: [],
   bootstrap: [AppComponent] // bootstrapping AppComponent as the root component

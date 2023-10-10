@@ -96,13 +96,13 @@ Building blocks
     CSS [DONE]
     TS [DONE]
   Directives [DONE]
-  Services 
-  Pipes 
-  Guards 
-  Interfaces
-  Classes 
-  Modules
-  Interceptors 
+  Services [DONE]
+  Pipes [THURSDAY]
+  Guards [THURSDAY]
+  Interfaces [TOMORROW]
+  Classes  [TOMORROW]
+  Modules [DONE]
+  Interceptors [THURSDAY]
 
 
 Concepts
@@ -111,14 +111,18 @@ Concepts
   Data Binding [DONE]
   Cross Component Communication [PARTIALLY DONE]
   Dependency Injection [DONE]
-  REST API Calls 
-  RxJS/Observables
-  Subscription
-  Authentication 
-  Lazy Loading 
-  Build and Deployment 
+  REST API Calls [DONE]
+  RxJS/Observables [DONE]
+  Subscription  [TOMORROW]
+  Authentication [THURSDAY]
+  Lazy Loading  [THURSDAY]
+  Build and Deployment [THURSDAY]
   
 Unit Testing 
+Angular library
+Angular Material (20 mins)
+NgRx (1.5- 2 hours)
+Angular Animations (30 mins)
 
 
 Think in Angular 
@@ -405,6 +409,25 @@ Forms in Angular
         1. suitable for complex form validations 
         2. suitable for unit testing
 
-Validation is pending in update form 
+Modules
+------
+  Feature Module 
+    ng g m employees/employees --flat -m=app
+
+  Feature Routing Module 
+    ng g m employees/employees-routing --flat -m=employees
+
+----
+Interfaces (15 mins)
+
+Products Feature for any to any comp commns 
+  Subscription
+
+
+Authentication (2.5 hours)
+----
+  Guards
+  HttpInterceptor
+
 
 

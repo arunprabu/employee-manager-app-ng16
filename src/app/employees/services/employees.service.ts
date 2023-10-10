@@ -39,14 +39,14 @@ export class EmployeesService {
     // 2.2 What's the HTTP Method? GET
     // 2.3 What's the REST API Client Tool? HttpClient
     return this.http.get('https://jsonplaceholder.typicode.com/users')
-    .pipe(
-      map((res: any) => {
-        console.log(res);
-        return res;
-      })
-    );
-    // 3. get the res from the REST API
-    // 4. send the res to the component
+      .pipe(
+        map((res: any) => {
+          // ideal place for us to alter the data -- filter, remove, sort, convert, add, transform, manipulate
+          // 3. get the res from the REST API
+          console.log(res);
+          return res; // 4. send the res to the component
+        })
+      );
   }
 
   // READ
@@ -58,7 +58,7 @@ export class EmployeesService {
     // 2.2 What's the HTTP Method? GET
     // 2.3 What's the REST API Client Tool? HttpClient
 
-    return this.http.get(`https://jsonplaceholder.typicode.com/users/${employeeId}`); 
+    return this.http.get(`https://jsonplaceholder.typicode.com/users/${employeeId}`);
       // returning the response
   }
 

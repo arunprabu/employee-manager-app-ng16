@@ -16,6 +16,7 @@
           class="btn btn-primary"
           data-bs-toggle="modal"
           data-bs-target="#editEmployeeModal"
+          (click)="handleEditModalOpen()"
         >
           Edit
         </button>
@@ -43,9 +44,9 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div class="modal-body" *ngIf="duplicateEmployee">
                 <!-- if you want html validation use ngNativeValidate in form tag -->
-                <form (ngSubmit)="handleUpdateEmployee()">
+                <form ngNativeValidate (ngSubmit)="handleUpdateEmployee()">
                   <div class="form-group row mb-3">
                     <label for="nameInput" class="col-sm-2 col-form-label"
                       >Name</label
@@ -58,6 +59,7 @@
                         placeholder="Enter name"
                         [(ngModel)]="duplicateEmployee.name"
                         name="nameInput"
+                        required
                       />
                       <div class="invalid-feedback">Name is Required</div>
                     </div>
@@ -74,6 +76,7 @@
                         placeholder="Enter Phone"
                         [(ngModel)]="duplicateEmployee.phone"
                         name="phoneInput"
+                        required
                       />
                       <div class="invalid-feedback">Phone is Required</div>
                     </div>
@@ -90,6 +93,7 @@
                         placeholder="Enter Email"
                         [(ngModel)]="duplicateEmployee.email"
                         name="emailInput"
+                        required
                       />
                       <div class="invalid-feedback">
                         <div>Email is Required</div>
