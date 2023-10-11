@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { EmployeesService } from '../../services/employees.service';
+import { IEmployee } from '../../models/iemployee';
 
 @Component({
   selector: 'app-add-employee',
@@ -29,7 +30,7 @@ export class AddEmployeeComponent {
     // 1. connect to the service using dependency injection -- refer constructor
     // 2. send the form data to the service
     this.employeesService.createEmployee(this.addEmployeeForm.value)
-      .subscribe((res: any) => { // 3. get the response from the service
+      .subscribe((res: IEmployee) => { // 3. get the response from the service
         console.log(res);
         if(res && res.id ){
           this.isSaved = true;

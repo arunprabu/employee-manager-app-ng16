@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeesService } from '../../services/employees.service';
+import { IEmployee } from '../../models/iemployee';
 
 @Component({
   selector: 'app-list-employees',
@@ -7,7 +8,7 @@ import { EmployeesService } from '../../services/employees.service';
   styles: []
 })
 export class ListEmployeesComponent implements OnInit {
-  employees!: any[];
+  employees!: IEmployee[];
 
   // 1. connect to the service using dependency injection
   constructor(private employeesService: EmployeesService) {
@@ -21,7 +22,7 @@ export class ListEmployeesComponent implements OnInit {
     console.log('Inside ngOnInit');
     // 2. send the req to the service
     this.employeesService.getEmployees()
-      .subscribe((res: any[]) => {
+      .subscribe((res: IEmployee[]) => {
         // 3. get the response from the service
         console.log(res);
         this.employees = res;

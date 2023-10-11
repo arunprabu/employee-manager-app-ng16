@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeesService } from '../../services/employees.service';
 import { ActivatedRoute } from '@angular/router';
+import { IEmployee } from '../../models/iemployee';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-employee-details',
@@ -8,8 +10,8 @@ import { ActivatedRoute } from '@angular/router';
   styles: []
 })
 export class EmployeeDetailsComponent implements OnInit {
-  employee: any;
-  duplicateEmployee: any;
+  employee!: IEmployee;
+  duplicateEmployee!: IEmployee;
   isUpdated = false;
 
   constructor(
@@ -27,10 +29,12 @@ export class EmployeeDetailsComponent implements OnInit {
     console.log(employeeId);
 
     console.log('Inside ngOnInit');
-    this.employeesService.getEmployeeById(employeeId).subscribe((res: any) => {
-      console.log(res);
-      this.employee = res;
-    });
+    this.employeesService
+      .getEmployeeById(employeeId)
+      .subscribe((res: any) => {
+        console.log(res);
+        this.employee = res;
+      });
   }
 
   handleEditModalOpen() {
@@ -44,8 +48,9 @@ export class EmployeeDetailsComponent implements OnInit {
   handleUpdateEmployee() {
     // let's read updated form data
     console.log(this.duplicateEmployee);
-    this.employeesService.updateEmployee(this.duplicateEmployee)  
-      .subscribe( (res: any) => {
+    this.employeesService
+      .updateEmployee(this.duplicateEmployee)
+      .subscribe((res: any) => {
         console.log(res);
         this.employee = res;
         this.isUpdated = true;

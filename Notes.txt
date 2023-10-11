@@ -97,12 +97,12 @@ Building blocks
     TS [DONE]
   Directives [DONE]
   Services [DONE]
-  Pipes [THURSDAY]
-  Guards [THURSDAY]
-  Interfaces [TOMORROW]
-  Classes  [TOMORROW]
+  Pipes [FRIDAY]
+  Guards [FRIDAY]
+  Interfaces [TODAY]
+  Classes  [TODAY]
   Modules [DONE]
-  Interceptors [THURSDAY]
+  Interceptors [FRIDAY]
 
 
 Concepts
@@ -114,9 +114,9 @@ Concepts
   REST API Calls [DONE]
   RxJS/Observables [DONE]
   Subscription  [TOMORROW]
-  Authentication [THURSDAY]
-  Lazy Loading  [THURSDAY]
-  Build and Deployment [THURSDAY]
+  Authentication [FRIDAY]
+  Lazy Loading  [FRIDAY]
+  Build and Deployment [FRIDAY]
   
 Unit Testing 
 Angular library
