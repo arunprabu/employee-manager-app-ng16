@@ -108,11 +108,11 @@ Concepts
 ------
   Routing [DONE]
   Data Binding [DONE]
-  Cross Component Communication [PARTIALLY DONE]
+  Cross Component Communication [DONE]
   Dependency Injection [DONE]
   REST API Calls [DONE]
   RxJS/Observables [DONE]
-  Subscription  [TODAY]
+  Subscription  [DONE]
   Authentication [FRIDAY]
   Lazy Loading  [FRIDAY]
   Build and Deployment [FRIDAY]

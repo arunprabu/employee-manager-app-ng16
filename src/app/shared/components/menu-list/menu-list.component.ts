@@ -5,13 +5,16 @@ import { Component } from '@angular/core';
   template: `
     <ul class="navbar-nav me-auto mb-2 mb-md-0">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+        <a class="nav-link" routerLink="/">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/concepts">Concepts</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/employees">Employees</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/products">Products</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/about-us">About Us</a>
@@ -24,4 +27,6 @@ import { Component } from '@angular/core';
   `,
   styles: []
 })
-export class MenuListComponent {}
+export class MenuListComponent {
+
+}
