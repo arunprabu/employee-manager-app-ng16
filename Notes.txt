@@ -99,11 +99,10 @@ Building blocks
   Services [DONE]
   Pipes [FRIDAY]
   Guards [FRIDAY]
-  Interfaces [TODAY]
-  Classes  [TODAY]
+  Interfaces [DONE]
+  Classes  [DONE]
   Modules [DONE]
   Interceptors [FRIDAY]
-
 
 Concepts
 ------
@@ -113,16 +112,16 @@ Concepts
   Dependency Injection [DONE]
   REST API Calls [DONE]
   RxJS/Observables [DONE]
-  Subscription  [TOMORROW]
+  Subscription  [TODAY]
   Authentication [FRIDAY]
   Lazy Loading  [FRIDAY]
   Build and Deployment [FRIDAY]
   
-Unit Testing 
-Angular library
-Angular Material (20 mins)
-NgRx (1.5- 2 hours)
-Angular Animations (30 mins)
+Unit Testing [MONDAY-WEDNESDAY]
+Angular library [NEXT THURSDAY]
+Angular Material (20 mins) [NEXT THURSDAY]
+NgRx (1.5- 2 hours) [NEXT FRIDAY]
+Angular Animations (30 mins) [NEXT FRIDAY]
 
 
 Think in Angular 
