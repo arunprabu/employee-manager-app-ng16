@@ -37,6 +37,11 @@ Webapps
         3. Not Expensive 
         4. offering better UX 
         5. Server's workload is shared between two servers
+
+      Disadvantages
+      ----  
+        1. Initial Loading will take longer 
+        2. NOT Search Engine Friendly 
       
 
 Single Page Apps (SPA)
@@ -97,12 +102,12 @@ Building blocks
     TS [DONE]
   Directives [DONE]
   Services [DONE]
-  Pipes [FRIDAY]
-  Guards [FRIDAY]
+  Pipes [MONDAY]
+  Guards [DONE]
   Interfaces [DONE]
   Classes  [DONE]
   Modules [DONE]
-  Interceptors [FRIDAY]
+  Interceptors [DONE]
 
 Concepts
 ------
@@ -113,9 +118,9 @@ Concepts
   REST API Calls [DONE]
   RxJS/Observables [DONE]
   Subscription  [DONE]
-  Authentication [FRIDAY]
-  Lazy Loading  [FRIDAY]
-  Build and Deployment [FRIDAY]
+  Authentication [DONE]
+  Lazy Loading  [DONE]
+  Build and Deployment [MONDAY]
   
 Unit Testing [MONDAY-WEDNESDAY]
 Angular library [NEXT THURSDAY]
@@ -448,7 +453,8 @@ Authentication Flow
     email, password 
       if both are valid then backend will generate JWT (token) and send it to the browser 
         * browser should store JWT in either cookie or local storage or session storage
-        * then, upon every subsequent request to the backend -- the JWT should be sent to the Back End 
+        * then, upon every subsequent request to the backend -- the JWT should be sent to the Back End (i.e BearerToken)
+          ... should be sent in request.header
         * backend will verify JWT -- if looks valid, then only Backend will send the successful res 
         * otherwise, backend will send negative res asking the user to login again 
 

@@ -17,6 +17,16 @@ const routes: Routes = [
     path: 'contact-us',
     component: ContactUsComponent,
     canActivate: [authGuard]
+  },
+  {
+    path: 'employees',
+    loadChildren: () =>
+      import('./employees/employees.module').then((m) => m.EmployeesModule)
+  },
+  {
+    path: 'products',
+    loadChildren: () =>
+      import('./products/products.module').then((m) => m.ProductsModule)
   }
 ];
 

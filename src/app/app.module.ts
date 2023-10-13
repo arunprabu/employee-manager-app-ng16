@@ -14,11 +14,12 @@ import { FormsModule } from '@angular/forms';
 import { UserInfoComponent } from './concepts/components/user-info/user-info.component';
 import { ReportsComponent } from './concepts/components/reports/reports.component';
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { EmployeesModule } from './employees/employees.module';
 import { ProductsModule } from './products/products.module';
 import { CartComponent } from './shared/components/header/cart/cart.component';
 import { AuthModule } from './auth/auth.module';
+import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
 
 // Main Switching Box
 @NgModule({
@@ -41,11 +42,13 @@ import { AuthModule } from './auth/auth.module';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    EmployeesModule,
-    ProductsModule,
     AuthModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true
+    }
+  ],
   bootstrap: [AppComponent] // bootstrapping AppComponent as the root component
 })
 export class AppModule { }

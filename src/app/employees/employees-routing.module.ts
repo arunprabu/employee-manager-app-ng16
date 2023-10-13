@@ -7,9 +7,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 // routing config for the employees feature
 const routes: Routes = [
-  { path: 'employees', component: ListEmployeesComponent },
-  { path: 'employees/add', component: AddEmployeeComponent },
-  { path: 'employees/:employeeId', component: EmployeeDetailsComponent } // employeeId is url param
+  { path: '', component: ListEmployeesComponent },
+  { path: 'add', component: AddEmployeeComponent },
+  { path: ':employeeId', component: EmployeeDetailsComponent } // employeeId is url param
 ];
 
 @NgModule({
