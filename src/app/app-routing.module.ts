@@ -5,6 +5,7 @@ import { ConceptsComponent } from './concepts/components/concepts/concepts.compo
 import { AboutUsComponent } from './about-us/components/about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/components/contact-us/contact-us.component';
 import { CartComponent } from './shared/components/header/cart/cart.component';
+import { authGuard } from './shared/guards/auth.guard';
 
 // config the routing 
 const routes: Routes = [
@@ -12,7 +13,11 @@ const routes: Routes = [
   { path: 'concepts', component: ConceptsComponent },
   { path: 'cart', component: CartComponent },
   { path: 'about-us', component: AboutUsComponent },
-  { path: 'contact-us', component: ContactUsComponent }
+  {
+    path: 'contact-us',
+    component: ContactUsComponent,
+    canActivate: [authGuard]
+  }
 ];
 
 @NgModule({

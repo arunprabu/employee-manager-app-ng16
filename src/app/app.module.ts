@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployeesModule } from './employees/employees.module';
 import { ProductsModule } from './products/products.module';
 import { CartComponent } from './shared/components/header/cart/cart.component';
+import { AuthModule } from './auth/auth.module';
 
 // Main Switching Box
 @NgModule({
@@ -41,7 +42,8 @@ import { CartComponent } from './shared/components/header/cart/cart.component';
     FormsModule,
     HttpClientModule,
     EmployeesModule,
-    ProductsModule
+    ProductsModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent] // bootstrapping AppComponent as the root component

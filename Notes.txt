@@ -430,3 +430,28 @@ Authentication (2.5 hours)
 
 
 
+Guards
+----
+  * like securirty guards 
+  * to pretect routes
+  * one of building blocks of angular
+  * return true or false 
+
+  ng g g shared/guards/auth 
+
+
+
+Authentication Flow 
+----
+  Signup 
+  Login 
+    email, password 
+      if both are valid then backend will generate JWT (token) and send it to the browser 
+        * browser should store JWT in either cookie or local storage or session storage
+        * then, upon every subsequent request to the backend -- the JWT should be sent to the Back End 
+        * backend will verify JWT -- if looks valid, then only Backend will send the successful res 
+        * otherwise, backend will send negative res asking the user to login again 
+
+      if credentials invalid, then backend will throw error to the browser 
+
+
