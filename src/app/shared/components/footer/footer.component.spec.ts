@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FooterComponent } from './footer.component';
+import { MenuListComponent } from '../menu-list/menu-list.component';
 
 describe('FooterComponent', () => {
   let component: FooterComponent;
@@ -8,7 +9,7 @@ describe('FooterComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [FooterComponent]
+      declarations: [FooterComponent, MenuListComponent]
     });
     fixture = TestBed.createComponent(FooterComponent);
     component = fixture.componentInstance;

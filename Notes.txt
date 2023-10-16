@@ -102,7 +102,7 @@ Building blocks
     TS [DONE]
   Directives [DONE]
   Services [DONE]
-  Pipes [MONDAY]
+  Pipes [TUESDAY]
   Guards [DONE]
   Interfaces [DONE]
   Classes  [DONE]
@@ -120,13 +120,15 @@ Concepts
   Subscription  [DONE]
   Authentication [DONE]
   Lazy Loading  [DONE]
-  Build and Deployment [MONDAY]
+  Build and Deployment [DONE]
   
-Unit Testing [MONDAY-WEDNESDAY]
-Angular library [NEXT THURSDAY]
-Angular Material (20 mins) [NEXT THURSDAY]
-NgRx (1.5- 2 hours) [NEXT FRIDAY]
-Angular Animations (30 mins) [NEXT FRIDAY]
+Unit Testing [4 Hours]
+Pipes [40 mins] [TUESDAY]
+Angular library [1 hour - Tuesday]
+Angular Material (1 hour) [Tuesday]
+Angular Animations (30 mins) [Tuesday]
+Internationalization (i18n)  (30-40 mins) [Tuesday]
+NgRx (3 hours) [Wednesday]
 
 
 Think in Angular 
@@ -434,7 +436,6 @@ Authentication (2.5 hours)
   HttpInterceptor
 
 
-
 Guards
 ----
   * like securirty guards 
@@ -459,5 +460,139 @@ Authentication Flow
         * otherwise, backend will send negative res asking the user to login again 
 
       if credentials invalid, then backend will throw error to the browser 
+
+
+Build and Deployment 
+----
+  ng build 
+
+============
+
+
+Requirements
+  Designs 
+    Development 
+      Testing
+        Deployment 
+          Maintenance
+
+Dev => QA => (bugs) => Dev => QA => (bugs) => Dev => QA => (bugs) => Dev => QA => (QA PASSED) => Deployment 
+
+
+Project: Calc 
+==============
+  Resources: FRD, HLD, LLD, DB Designs, UI Designs
+  -------------------------------------------------
+  Feature: add 
+  ------------
+    Dev 
+    ----
+      Prepare: Test cases
+      ------------
+        1. add should take in only numbers as inputs 
+        2. add should return number as output 
+        3. add button should be disabled if invalid values entered 
+      
+      function add(a: number, b: number): number {
+        return a + b;
+      }
+
+      add(10, 20); // 30
+
+      Setup Tools to Test our app 
+
+
+Automation Testing 
+------
+  0. Static Type Checking 
+      Tools: TypeScript
+
+  1. Unit Testing - [TO LEARN]
+      * Testing the tiny, individual unit 
+      * Testing the component in isolation (without connecting to REST API)
+      * writing code to test our code 
+      * bug reduction density: 40-80% 
+
+      Tools: 
+        
+        (Unit Testing Framework)
+        Karma (Test Runner)
+
+  2. Integration Testing  
+      * Different units, modules, or components tested as combined entity 
+      * Behavior of the app would be tested 
+      * Used for exposing issues in the integration of multiple units 
+
+      Example: [testing if a child comp can update parent comp]
+
+      Tools: Jasmine JS, Karma 
+
+  3. End to End Testing 
+      * Testing the whole app 
+      * usually a multi-step test combining multiple units and integration tests into one big test 
+      * tests are done in simulated browser; there may or may not be UI while the tests are running 
+
+      Tools: Selenium or CypressJS or Protractor or Cucumber or Tosca or Playwright
+
+-------------------------
+
+2 Approaches / Modern Software Dev Methodologies (as of 2023)
+----------------
+  dev writes test cases => dev writes fn code => (TOOLS) => instant feedback of success / failure 
+
+  1. Test Driven Development (TDD)
+      * is a programming practice that instructs the dev to write NEW code only if an automation test failed 
+
+      dev writes test cases 
+        (Instant Feedback of Success / Error)
+          dev writes fn code (only if error occurs)
+            (Instant Feedback of Success / Error)
+              [CODE COMPLETE if success]
+
+      Testing Pattern: AAA (Arrange, Act, Assert)
+      Tools: JEST, Mocha, Chai 
+
+
+  2. Behaviour Driven Development (BDD)
+      * is an agile dev Methodology 
+      * an app is documented and designed around the behaviour the end user wants to experience 
+
+      dev writes test cases (around the behaviour of the app)
+        (Instant Feedback of Success / Error)
+          dev writes fn code (only if error occurs)
+            (Instant Feedback of Success / Error)
+              [CODE COMPLETE if success]
+
+      Testing Pattern: Given/When/Then
+      Tools: Jasmine JS
+
+-----------------
+
+What will you learn?
+----
+  Unit Testing in Jasmine JS 
+    1. How to write tests?
+    2. Where to write tests?
+    3. How to test our app against the identified test cases? 
+
+
+-------
+Unit Testing 
+----
+  File walkthru 
+  Testing Components 
+    * HTML 
+    * TS 
+        variables 
+        methods 
+
+  Testing Directives
+    Mock 
+  Testing Services 
+    Mock 
+  Testing Pipes [TODO]
+  Testing Guards [TODO]
+  Testing Interceptors [TODO] 
+  Testing Router [TODO]
 
 

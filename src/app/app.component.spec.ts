@@ -1,29 +1,40 @@
+// Given
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
+import { AppComponent } from './app.component'; // What comp taken up testing
+import { HeaderComponent } from './shared/components/header/header.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { MenuListComponent } from './shared/components/menu-list/menu-list.component';
+
+// * How to write tests?
+// * Where to write tests and in what syntax?
+// Testing Pattern: Given/When/Then
 
 describe('AppComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [RouterTestingModule],
-    declarations: [AppComponent]
-  }));
+  // what comp are we testing
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
+  // Setup
+  beforeEach(() =>
+    TestBed.configureTestingModule({
+      // similar to app module
+      imports: [RouterTestingModule],
+      declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        MenuListComponent
+      ]
+    })
+  );
 
-  it(`should have as title 'employee-manager-app'`, () => {
+  // test case a.k.a test spec -- 'it' is an api coming from JasmineJS
+  it('should have proper app component', () => {
+    // When
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('employee-manager-app');
-  });
+    const app = fixture.componentInstance; // we are taking up comp's ts for testing
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('employee-manager-app app is running!');
+    // Then (assert)
+    // expect is from Jasmine | toBeDefined - is a matcher from Jasmine
+    expect(app).toBeDefined();
   });
 });
