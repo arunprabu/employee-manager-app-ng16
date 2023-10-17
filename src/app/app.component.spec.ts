@@ -9,7 +9,7 @@ import { MenuListComponent } from './shared/components/menu-list/menu-list.compo
 // * How to write tests?
 // * Where to write tests and in what syntax?
 // Testing Pattern: Given/When/Then
-
+// TEST SUITE = group of related test specs
 describe('AppComponent', () => {
   // what comp are we testing
 
@@ -36,5 +36,14 @@ describe('AppComponent', () => {
     // Then (assert)
     // expect is from Jasmine | toBeDefined - is a matcher from Jasmine
     expect(app).toBeDefined();
+  });
+
+  // test spec #2
+  it('should have a variable title with value being Employee Manager!', () => {
+    // When
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance; // we are taking up comp class for testing
+
+    expect(app.title).toBe('Employee Manager!');
   });
 });

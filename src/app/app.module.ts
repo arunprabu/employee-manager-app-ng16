@@ -20,6 +20,8 @@ import { ProductsModule } from './products/products.module';
 import { CartComponent } from './shared/components/header/cart/cart.component';
 import { AuthModule } from './auth/auth.module';
 import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
+import { UnitTestingDemoComponent } from './unit-testing-demo/components/unit-testing-demo/unit-testing-demo.component';
+import { CounterComponent } from './unit-testing-demo/components/counter/counter.component';
 
 // Main Switching Box
 @NgModule({
@@ -35,7 +37,9 @@ import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
     UserInfoComponent,
     ReportsComponent,
     ColorizerDirective,
-    CartComponent
+    CartComponent,
+    UnitTestingDemoComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,

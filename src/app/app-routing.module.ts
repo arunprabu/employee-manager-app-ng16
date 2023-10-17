@@ -6,6 +6,7 @@ import { AboutUsComponent } from './about-us/components/about-us/about-us.compon
 import { ContactUsComponent } from './contact-us/components/contact-us/contact-us.component';
 import { CartComponent } from './shared/components/header/cart/cart.component';
 import { authGuard } from './shared/guards/auth.guard';
+import { UnitTestingDemoComponent } from './unit-testing-demo/components/unit-testing-demo/unit-testing-demo.component';
 
 // config the routing 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'concepts', component: ConceptsComponent },
   { path: 'cart', component: CartComponent },
   { path: 'about-us', component: AboutUsComponent },
+  { path: 'unit-testing-demo', component: UnitTestingDemoComponent },
   {
     path: 'contact-us',
     component: ContactUsComponent,

@@ -469,6 +469,7 @@ Build and Deployment
 ============
 
 
+
 Requirements
   Designs 
     Development 
@@ -509,13 +510,13 @@ Automation Testing
 
   1. Unit Testing - [TO LEARN]
       * Testing the tiny, individual unit 
-      * Testing the component in isolation (without connecting to REST API)
+      * Testing the building blocks in isolation (without connecting to REST API)
       * writing code to test our code 
       * bug reduction density: 40-80% 
 
       Tools: 
         
-        (Unit Testing Framework)
+        Jasmine JS (Unit Testing Framework)
         Karma (Test Runner)
 
   2. Integration Testing  
@@ -553,7 +554,7 @@ Automation Testing
       Tools: JEST, Mocha, Chai 
 
 
-  2. Behaviour Driven Development (BDD)
+  2. Behaviour Driven Development (BDD) - TO LEARN
       * is an agile dev Methodology 
       * an app is documented and designed around the behaviour the end user wants to experience 
 
@@ -581,10 +582,13 @@ Unit Testing
 ----
   File walkthru 
   Testing Components 
-    * HTML 
+    * HTML [DONE]
     * TS 
-        variables 
-        methods 
+        variables [DONE]
+        methods [DONE]
+        Event Handlers [DONE]
+    * Styles [DONE]
+    * Mocking 
 
   Testing Directives
     Mock 

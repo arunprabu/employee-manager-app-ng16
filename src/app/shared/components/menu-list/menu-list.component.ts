@@ -17,6 +17,9 @@ import { Component } from '@angular/core';
         <a class="nav-link" routerLink="/products">Products</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" routerLink="/unit-testing-demo">Unit Testing Demo</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" routerLink="/about-us">About Us</a>
       </li>
       <li class="nav-item">
@@ -27,6 +30,4 @@ import { Component } from '@angular/core';
   `,
   styles: []
 })
-export class MenuListComponent {
-
-}
+export class MenuListComponent {}
