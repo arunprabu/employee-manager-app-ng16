@@ -22,6 +22,7 @@ import { AuthModule } from './auth/auth.module';
 import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
 import { UnitTestingDemoComponent } from './unit-testing-demo/components/unit-testing-demo/unit-testing-demo.component';
 import { CounterComponent } from './unit-testing-demo/components/counter/counter.component';
+import { HighlightDirective } from './unit-testing-demo/directives/highlight.directive';
 
 // Main Switching Box
 @NgModule({
@@ -39,7 +40,8 @@ import { CounterComponent } from './unit-testing-demo/components/counter/counter
     ColorizerDirective,
     CartComponent,
     UnitTestingDemoComponent,
-    CounterComponent
+    CounterComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
