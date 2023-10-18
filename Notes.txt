@@ -102,7 +102,7 @@ Building blocks
     TS [DONE]
   Directives [DONE]
   Services [DONE]
-  Pipes [TUESDAY]
+  Pipes [FRIDAY]
   Guards [DONE]
   Interfaces [DONE]
   Classes  [DONE]
@@ -593,11 +593,12 @@ Unit Testing
 
   Testing Directives [DONE]
     Mock 
-  Testing Services 
+  Testing Services [DONE]
     Mock 
   Testing Pipes [TODO]
   Testing Guards [TODO]
   Testing Interceptors [TODO] 
   Testing Router [TODO]
 
-
+---------
+Pipes 
