@@ -122,13 +122,15 @@ Concepts
   Lazy Loading  [DONE]
   Build and Deployment [DONE]
   
-Unit Testing [4 Hours]
-Pipes [40 mins] [TUESDAY]
-Angular library [1 hour - Tuesday]
-Angular Material (1 hour) [Tuesday]
-Angular Animations (30 mins) [Tuesday]
-Internationalization (i18n)  (30-40 mins) [Tuesday]
-NgRx (3 hours) [Wednesday]
+Unit Testing [DONE]
+Angular Animations [DONE]
+Internationalization (i18n)  [DONE]
+Pipes [40 mins] [FRIDAY]
+Angular library [1 hour - FRIDAY]
+Angular Material (30 mins ) [Monday]
+
+NgRx (~3 hours) [MONDAY]
+
 
 
 Think in Angular 
@@ -601,4 +603,9 @@ Unit Testing
   Testing Router [TODO]
 
 ---------
-Pipes 
+Pipes
+------
+  * Building block and an utility for transforming data
+  * 2 Types of Pipes 
+      1. Pure 
+      2. Impure [TODO]

@@ -23,6 +23,7 @@ import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
 import { UnitTestingDemoComponent } from './unit-testing-demo/components/unit-testing-demo/unit-testing-demo.component';
 import { CounterComponent } from './unit-testing-demo/components/counter/counter.component';
 import { HighlightDirective } from './unit-testing-demo/directives/highlight.directive';
+import { EllipsisPipe } from './shared/pipes/ellipsis.pipe';
 
 // Main Switching Box
 @NgModule({
@@ -41,7 +42,8 @@ import { HighlightDirective } from './unit-testing-demo/directives/highlight.dir
     CartComponent,
     UnitTestingDemoComponent,
     CounterComponent,
-    HighlightDirective
+    HighlightDirective,
+    EllipsisPipe
   ],
   imports: [
     BrowserModule,
