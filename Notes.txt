@@ -126,11 +126,9 @@ Unit Testing [DONE]
 Angular Animations [DONE]
 Internationalization (i18n)  [DONE]
 Pipes [DONE]
-Angular library [1 hour - FRIDAY]
-Angular Material (30 mins ) [Monday]
-
-NgRx (~3 hours) [MONDAY]
-
+Angular library [DONE]
+Angular Material (30 mins ) [DONE]
+NgRx [DONE]
 
 
 Think in Angular 
